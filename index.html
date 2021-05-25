@@ -1,0 +1,111 @@
+<html>
+<head>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<style>
+    @font-face {
+        font-family: hindi;
+        src: url("KrutiDev010.ttf");
+    }
+#div1, #div2 {
+  float: left;
+  min-width: 100px;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid rgb(180, 19, 19);
+}
+body{
+  padding-left: 16px;
+}
+
+button{
+  background-color: darkgreen;
+  color: antiquewhite;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.innerHTML);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.value = data;
+}
+
+function checkAnswer(){
+  if(document.getElementById("1").value == "lEeku"){
+    document.getElementById("1").style.backgroundColor = "green"
+    document.getElementById("1").style.color = "white"
+    console.log("value match");
+  }else{
+    document.getElementById("1").style.backgroundColor = "red"
+    document.getElementById("1").style.color = "white"
+  }
+  if(document.getElementById("2").value == "iz;Ru"){
+    document.getElementById("2").style.backgroundColor = "green"
+    document.getElementById("2").style.color = "white"
+  }
+  else{
+    document.getElementById("2").style.backgroundColor = "red"
+    document.getElementById("2").style.color = "white"
+  }
+  if(document.getElementById("3").value == "vL="){
+    document.getElementById("3").style.backgroundColor = "green"
+    document.getElementById("3").style.color = "white"
+  }
+  else{
+    document.getElementById("3").style.backgroundColor = "red"
+    document.getElementById("3").style.color = "white"
+  }
+  if(document.getElementById("4").value == "dqVqaac"){
+    document.getElementById("4").style.backgroundColor = "green"
+    document.getElementById("4").style.color = "white"
+  }
+  else{
+    document.getElementById("4").style.backgroundColor = "red"
+    document.getElementById("4").style.color = "white"
+  }
+  if(document.getElementById("5").value == "tyu"){
+    document.getElementById("5").style.backgroundColor = "green"
+    document.getElementById("5").style.color = "white"
+  }
+  else{
+    document.getElementById("5").style.backgroundColor = "red"
+    document.getElementById("1").style.color = "white"
+  }
+}
+</script>
+</head>
+<body>
+
+<h2 style="color: blue;">Drag and Drop</h2>
+<p style="font-family: hindi; font-size: 20px; font-weight: bold;">uhps fn, x, okD;ksa js[kkaafdr “kCnksa ds fy, mfpr lekukFkhZ “kCn MªSx ,aaM MªkWi dhft,A (Drag and drop)
+</p><br>
+<div id="div1"><p style="font-family: hindi; font-size: 20px; display: inline;" id="hi" draggable="true" ondragstart="drag(event)" id="drag1">vL=</p></div>
+<div id="div2"><p style="font-family: hindi; font-size: 20px; display: inline;" id="hi" draggable="true" ondragstart="drag(event)" id="drag1">lEeku</p></div>
+<div id="div2"><p style="font-family: hindi; font-size: 20px; display: inline;" id="hi" draggable="true" ondragstart="drag(event)" id="drag1">iz;Ru</p></div>
+<div id="div2"><p style="font-family: hindi; font-size: 20px; display: inline;" id="hi" draggable="true" ondragstart="drag(event)" id="drag1">tyu</p></div>
+<div id="div2"><p style="font-family: hindi; font-size: 20px; display: inline;" id="hi" draggable="true" ondragstart="drag(event)" id="drag1">dqVqaac</p></div>
+<div id="div2"><p style="font-family: hindi; font-size: 20px; display: inline;" id="hi" draggable="true" ondragstart="drag(event)" id="drag1">o`{k</p></div>
+<div id="div2"><p style="font-family: hindi; font-size: 20px; display: inline;" id="hi" draggable="true" ondragstart="drag(event)" id="drag1">nsg</p></div><br><br><br>
+
+<div><p style="font-family: hindi; display: inline; font-size: 20px;">1. gesa f”k{kdksa dk vknj djuk pkfg,A gesa f”k{kdksa dk </p><input id="1" style="font-family: hindi; font-size: 20px;" type="text" ondrop="drop(event)" ondragover="allowDrop(event)" disabled><p style="font-family: hindi; display: inline-block; font-size: 20px;"> djuk pkfg,A
+</p></div>
+<div><p style="font-family: hindi; display: inline; font-size: 20px;">2. jksgu xf.kr ds lHkh iz”uksa dks le>us dh dksf”k”k dj jgk gSA jksgu xf.kr ds lHkh iz”uksa dks le>us dk  </p><input id="2" style="font-family: hindi; font-size: 20px;" type="text" ondrop="drop(event)" ondragover="allowDrop(event)" disabled><p style="font-family: hindi; display: inline-block; font-size: 20px;"> dj jgk gSA 
+</p></div>
+<div><p style="font-family: hindi; display: inline; font-size: 20px;">3. nq”euksa us “k=q ds lkeus gfFk;kj Mky fn,A nq”euksa us “k=q ds lkeus </p><input id="3" style="font-family: hindi; font-size: 20px;" type="text" ondrop="drop(event)" ondragover="allowDrop(event)" disabled><p style="font-family: hindi; display: inline-block; font-size: 20px;"> Mky fn,A  
+</p></div>
+<div><p style="font-family: hindi; display: inline; font-size: 20px;">4. esjs </p><input id="4" style="font-family: hindi; font-size: 20px;" type="text" ondrop="drop(event)" ondragover="allowDrop(event)" disabled><p style="font-family: hindi; display: inline-block; font-size: 20px;"> esa esjs nks HkkbZ o ,d cgu gSaaaA esjs ifjokj esa esjs nks HkkbZ o ,d cgu gSaaA   
+</p></div>
+<div><p style="font-family: hindi; display: inline; font-size: 20px;">5. fouksn dh izxfr ns[kdj eukst dks bZ’;kZ gksus yxhA fouksn dh izxfr ns[kdj eukst dks  </p><input id="5" style="font-family: hindi; font-size: 20px;" type="text" ondrop="drop(event)" ondragover="allowDrop(event)" disabled><p style="font-family: hindi; display: inline-block; font-size: 20px;"> gksus yxhA 
+</p></div>
+<button onclick="checkAnswer()">Check Answer</button>
+</body>
+</html>
